@@ -3,6 +3,8 @@ python:
   - "3.8" 
 install:
   - pip install -r requirements.txt
+  - pip install coverage
 script:
   - python3 test.py
+  - coverage run -m unittest discover
 
