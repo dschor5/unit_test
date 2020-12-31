@@ -1,4 +1,10 @@
 def sumInts(*args):
+   """Sums an array of integers.
+   :param args: Array of arguments
+   :type args: Integers
+   :return: Sum
+   :rtype: Integer
+   """
    r = 0;
    for i in args:
       r += i
