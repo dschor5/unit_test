@@ -1,5 +1,5 @@
 import unittest
-from ../main_app import sumInts
+from unit_test.main_app import sumInts
 
 class TestSum(unittest.TestCase):
    """Test class for main file."""
