@@ -1,7 +1,16 @@
-######
-Heading
-######
+Welcome to unit_test's documentation!
+=====================================
 
-Some test
-#. List item 1
-#. List item 2
+.. toctree::
+   :maxdepth: 4
+   :caption: Contents:
+   
+   modules.rst
+   some_test.rst
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

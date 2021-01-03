@@ -1,5 +1,5 @@
 import unittest
-from source.calculator import Calculator
+from source.calculator.calculator import Calculator
 
 class TestSum(unittest.TestCase):
    """Test class for main file."""
