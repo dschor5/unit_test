@@ -37,7 +37,7 @@ class Person:
    @property
    def email(self):
       """Returns email address"""
-      if(self._first_name is "" or self._last_name == ""):
+      if(self._first_name == "" or self._last_name == ""):
          return ""
       return self._first_name + "." + self._last_name + "@gmail.com"
       
