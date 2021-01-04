@@ -41,7 +41,7 @@ class TestPerson(unittest.TestCase):
         self.assertEqual(self.p.last_name,  "Smith")
         self.assertEqual(self.p.email,      "John.Smith@gmail.com")
 
-     def test_str(self):
+    def test_str(self):
         """Test __str__ function"""
         self.assertEqual(self.p.__str__() == "")
         self.p.first_name = "John"
