@@ -1,6 +1,6 @@
 digraph "classes" {
 charset="utf-8"
 rankdir=BT
-"0" [label="{Calculator|CONSTANT_VAR : int\lCONSTANT_VAR_2 : int\lpublic_var : int\l|addition(var_a, var_b)\ldivision(var_a, var_b)\lmultiplication(var_a, var_b)\lsubtraction(var_a, var_b)\l}", shape="record"];
-"1" [label="{Person|email\lfirst_name\llast_name\l|}", shape="record"];
+"0" [label="{Calculator|CONSTANT_VAR : int\lCONSTANT_VAR_2 : int\l__private_var : int\l_protected_var : int\lpublic_var : int\l|__init__()\l__private_function()\l_protected_function()\laddition(var_a, var_b)\ldivision(var_a, var_b)\lmultiplication(var_a, var_b)\lsubtraction(var_a, var_b)\l}", shape="record"];
+"1" [label="{Person|_first_name : NoneType\l_last_name : NoneType\lemail\lfirst_name\llast_name\l|__init__()\l__repr__()\l__str__()\l_is_defined()\l}", shape="record"];
 }
