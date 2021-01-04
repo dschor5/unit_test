@@ -5,8 +5,8 @@ class Person:
 
     def __init__(self):
         """Initialization funciton"""
-        self._first_name = ""
-        self._last_name  = ""
+        self._first_name = None
+        self._last_name  = None
 
     def _is_defined(self):
         """Check if the first and last name are defined.
@@ -14,7 +14,7 @@ class Person:
         Returns:
             boolean: True if the first and last name are defined.
         """
-        return self._first_name == "" and self._last_name == ""
+        return self._first_name is not None and self._last_name is not None
 
     @property
     def first_name(self):
@@ -23,7 +23,10 @@ class Person:
         Returns:
             string: first_name
         """
-        return self._first_name
+        f_name = ""
+        if self._first_name is not None:
+            f_name = self._first_name
+        return f_name
 
     @first_name.setter
     def first_name(self, new_first_name):
@@ -37,7 +40,10 @@ class Person:
         Returns:
             string: last_name
         """
-        return self._last_name
+        l_name = ""
+        if self._last_name is not None:
+            l_name = self._last_name
+        return l_name
 
     @last_name.setter
     def last_name(self, new_last_name):
@@ -47,9 +53,10 @@ class Person:
     @property
     def email(self):
         """Returns email address"""
-        if(self._first_name == "" or self._last_name == ""):
-            return ""
-        return self._first_name + "." + self._last_name + "@gmail.com"
+        e_str = ""
+        if self._is_defined():
+            e_str = self._first_name + "." + self._last_name + "@gmail.com"
+        return e_str
 
     def __str__(self) -> str:
         """String representation"""
@@ -60,4 +67,7 @@ class Person:
 
     def __repr__(self):
         """String representation of Person object"""
-        return 'Person({} {})'.format(self._first_name, self._last_name)
+        new_str = "Person()"
+        if self._is_defined():
+            new_str = 'Person({} {})'.format(self._first_name, self._last_name)
+        return new_str

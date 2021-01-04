@@ -50,7 +50,7 @@ class TestPerson(unittest.TestCase):
 
     def test_repr(self):
         """Test __repr__ function"""  
-        self.assertEqual(self.p.__str__(), "")
+        self.assertEqual(self.p.__repr__(), "Person()")
         self.p.first_name = "John"
         self.p.last_name = "Smith"          
-        self.assertEqual(self.p.__str__(), "Person(John Smith)")      
+        self.assertEqual(self.p.__repr__(), "Person(John Smith)")      
