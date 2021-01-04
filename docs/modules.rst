@@ -5,4 +5,4 @@ source
    :maxdepth: 4
 
    calculator
-   person
+   calculator.person
