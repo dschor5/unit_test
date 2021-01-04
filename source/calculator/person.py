@@ -14,7 +14,7 @@ class Person:
         Returns:
             boolean: True if the first and last name are defined.
         """
-        return (self._first_name == "" and self._last_name == "")
+        return self._first_name == "" and self._last_name == ""
 
     @property
     def first_name(self):
@@ -54,7 +54,7 @@ class Person:
     def __str__(self) -> str:
         """String representation"""
         new_str = ""
-        if(self._is_defined()):
+        if self._is_defined():
             new_str = self._first_name + " " + self.last_name
         return new_str
 

@@ -32,7 +32,7 @@ class Calculator:
         Raises:
             TypeError: If something other than float or int is used.
         """
-        if((isinstance(var_a, (int, float)) and isinstance(var_b, (int, float)))):
+        if (isinstance(var_a, (int, float)) and isinstance(var_b, (int, float))):
             var_r = var_a + var_b
         else:
             raise ValueError
