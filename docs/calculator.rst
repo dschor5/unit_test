@@ -4,7 +4,7 @@ calculator package
 Submodules
 ----------
 
-.. include:: _dynamic/classes.dot
+.. graphviz:: _dynamic/packages.dot
 
 calculator.calculator module
 ----------------------------
