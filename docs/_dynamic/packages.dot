@@ -1,0 +1,7 @@
+digraph "packages" {
+charset="utf-8"
+rankdir=BT
+"0" [label="/Users/dario/Documents/Programming/unit_test/source/calculator/__init__.py", shape="box"];
+"1" [label="/Users/dario/Documents/Programming/unit_test/source/calculator/calculator.py", shape="box"];
+"2" [label="/Users/dario/Documents/Programming/unit_test/source/calculator/person.py", shape="box"];
+}

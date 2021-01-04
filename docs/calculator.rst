@@ -4,6 +4,8 @@ calculator package
 Submodules
 ----------
 
+.. include:: _static/classes.dot
+
 calculator.calculator module
 ----------------------------
 
